@@ -1,49 +1,49 @@
 # telegram-submission-bot
 
-## 准备
-* 安装Python并运行`pip install python-telegram-bot==11.1.0`
-* 创建1个Bot、1个Group和1个Public Channel
+## Prepare
+* Install Python and run `pip install python-telegram-bot==11.1.0`
+* Create 1 Bot, 1 Group and 1 Public Channel
 
-## 配置
-打开`config.json`并配置
+## Configuration
+Open `config.json` and configure
 ```
 {
-    "Admin": 0,                  //管理员用户ID（通常为8~9位数字）
-    "Token": "",                 //Bot的Token
-    "Group_ID": 0,               //无需填写
-    "Publish_Channel_ID": ""     //频道ID（如：@channel）
+    "Admin": 0, //Administrator user ID (usually 8-9 digits)
+    "Token": "", //Bot's Token
+    "Group_ID": 0, //No need to fill in
+    "Publish_Channel_ID": "" //Channel ID (e.g. @channel)
 }
 ```
-运行bot后在审稿群中输入`/setgroup`
+After running the bot, enter `/setgroup` in the review group
 
-## 运行
+## Run
 ```
 python main.py
 ```
 
-## 使用
-### 投稿
+## Use
+### Contribution
 ![Screenshot](https://github.com/Netrvin/telegram-submission-bot/raw/master/Readme_Img/Screenshot1.jpg)
 
-将消息发送至机器人，选择是否保留消息来源后即可完成投稿（若转发他人的消息，则不可选择不保留消息来源）
-可接收的投稿类型:
-* 文字
-* 图片
-* 音频/语音
-* 视频
-* 文件
+Send the message to the robot, choose whether to keep the source of the message, and then complete the submission (if you forward another person’s message, you cannot choose not to keep the source of the message)
+Acceptable submission types:
+* Text
+* Picture
+* Audio/Voice
+* Video
+* File
 
-### 审稿
+### Review
 ![Screenshot](https://github.com/Netrvin/telegram-submission-bot/raw/master/Readme_Img/Screenshot2.jpg)
 
-所有在审稿群中的用户，点击采用即可完成审稿
-在群中回复稿件本身（不是稿件详情），可在采用的同时对其进行评论
+All users in the review group, click to adopt to complete the review
+Reply to the manuscript itself (not the manuscript details) in the group, and comment on it while using it
 
 ## Todo (Features)
-- [x] 评论稿件
-- [x] 转发他人的消息禁止匿名，避免版权问题
-- [x] 采用稿件后通知投稿人
-- [x] 稿件详情添加投稿/审稿人内链
-- [x] 匿名发布稿件
-- [ ] 投稿统计
-- [ ] 多语言
+-[x] Comment manuscript
+-[x] Forwarding others’ messages is forbidden to be anonymous and avoid copyright issues
+-[x] Notify contributors after adopting the manuscript
+-[x] Add contributor/reviewer internal link to manuscript details
+-[x] Publish manuscript anonymously
+-[] Contribution statistics
+- [ ] multi-language
